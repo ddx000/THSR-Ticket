@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1312</width>
+    <height>830</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="b_send_bookingform">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>490</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>送出表單</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>380</y>
+      <width>241</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_securecode"/>
+   </widget>
+   <widget class="QPushButton" name="b_generate_securecode">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>390</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>產生驗證碼</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_securecode">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>490</y>
+      <width>239</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>110</y>
+      <width>271</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>起程站</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="cB_depar_station">
+         <item>
+          <property name="text">
+           <string>南港</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>台北</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>板橋</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>桃園</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>新竹</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>苗栗</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>台中</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>彰化</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>雲林</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>嘉義</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>台南</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>左營</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>到達站</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="cB_arrive_station">
+         <item>
+          <property name="text">
+           <string>南港</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>台北</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>板橋</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>桃園</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>新竹</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>苗栗</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>台中</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>彰化</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>雲林</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>嘉義</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>台南</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>左營</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QCalendarWidget" name="calendarWidget_departure"/>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>出發時間</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="cB_depar_time">
+         <item>
+          <property name="text">
+           <string>00:00</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>00:30</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>06:00</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>06:30</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>07:00</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>07:30</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>08:00</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>08:30</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>09:00</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>09:30</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>10:00</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>10:30</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>11:00</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>11:30</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>12:00</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>12:30</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>13:00</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>13:30</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>14:00</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>14:30</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>15:00</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>15:30</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>16:00</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>16:30</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>17:00</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>17:30</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>18:00</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>18:30</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>19:00</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>19:30</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>20:00</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>20:30</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>21:00</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>21:30</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>22:00</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>22:30</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>23:00</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>23:30</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QListWidget" name="listWidget_availableTrain">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>110</y>
+      <width>391</width>
+      <height>341</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="b_send_selectedtrain">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>460</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>送出選擇車次</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_ID">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>20</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>A114050073</string>
+    </property>
+    <property name="placeholderText">
+     <string>ID</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_phone">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>60</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0912855962</string>
+    </property>
+    <property name="placeholderText">
+     <string>phone</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit_result">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>110</y>
+      <width>361</width>
+      <height>341</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1312</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
